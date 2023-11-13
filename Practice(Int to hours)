@@ -1,0 +1,48 @@
+import kotlin.math.max
+import kotlin.math.min
+
+fun main() {
+    val Seconds = clock()
+    val minutes: Int = minutes().toInt()
+    val hours: Int
+    println("00:$minutes:$Seconds")
+
+
+
+}
+
+fun example(): Int {
+    val nSecond1 = 100
+    return nSecond1
+}
+
+fun clock(): Int {
+    if (minutes() > 0) {
+        val nSecond = 59
+        return nSecond
+    
+        
+    } else {
+        val nS1  = minutes().toInt() * 60
+        val nSecond = example() - nS1
+        return nSecond
+    }
+}
+
+fun minutesExm() : Double{
+    val minutes = example() / 60.0
+    return minutes
+}
+fun minutes(): Double{
+    if (minutesExm() > 60) {
+        val minutes1: Double = 59.0
+        return minutes1
+    } else if (minutesExm() < 1) {
+        val minutes1 = 0.0
+        return minutes1
+    } else if (minutesExm() < 60) {
+        val minutes1 = example()/60.0
+        return minutes1
+    }
+    return -1.0
+}
